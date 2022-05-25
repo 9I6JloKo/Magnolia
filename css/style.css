@@ -1,0 +1,523 @@
+html {
+    font-family: "Tahoma";
+}
+body {
+    margin: 0;
+    background: #FFF9F6;
+}
+header {
+    background-color: white;
+    z-index:  20;
+    position: sticky;
+    top: 0px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
+header div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.logo {
+    width: 157px;
+    margin-left: 73px;
+    margin-right: 255px;
+    justify-content: center;
+}
+.logo img {
+    width: 157px;
+}
+.nav-link {
+    font-family: "Verdana";
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+.underline-one {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(167, 167, 167); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.4s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: #d5ec51; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.4s;  /* Время эффекта */
+}
+.nav-link_add:after {
+    top: 0px;
+}
+.dropbtn {
+    font-size: 17px;
+    border: none;
+    background-color: white;
+    margin-top: 39px;
+}
+.dropdown {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-content {
+    transition-duration: 0.3s;
+    margin-top: 70px;
+    display: none;
+    width: fit-content;
+    height:fit-content;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    font-weight: 600;
+    z-index: 1;
+    color: black;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid lightgrey;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+.info_header {
+    font-family: "Verdana";
+    font-weight: 700;
+    text-align: right;
+    margin-right: 15px;
+}
+form {
+    margin-right: -60px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+form input[type="text"] {
+    height: 30px;
+    width: 150px;
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    font-size: 16px;
+}
+::-webkit-input-placeholder {
+    color: lightgrey;
+ }
+form input[type="image"] {
+    width: 28px;
+    margin-right: 5px;
+    border-left: 1px solid grey;
+    padding-left: 5px;
+}
+main {
+    z-index: 15;
+}
+/* код с интернета (проверки не требует)*/
+.itcss {
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  /* стили для wrapper */
+.itcss__wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+}
+  
+  /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+  /* класс для отключения transition */
+.transition-none {
+    transition: none;
+}
+  
+  /* стили для элементов */
+.itcss__item {
+    background-color: white;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+  
+  /* кнопки Prev и Next */
+.itcss__control {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 50px;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+    user-select: none;
+}
+  
+.itcss__control_show {
+    display: flex;
+}
+  
+.itcss__control:hover,
+.itcss__control:focus {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+}
+  
+.itcss__control_prev {
+    left: 0;
+}
+  
+.itcss__control_next {
+    right: 0;
+}
+  
+.itcss__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+  
+.itcss__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+  
+.itcss__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+  
+  /* Индикаторы */
+.itcss__indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 15%;
+    list-style: none;
+    user-select: none;
+}
+  
+.itcss__indicator {
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(150, 150, 150, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+}
+  
+.itcss__indicator_active {
+    background-color: rgb(218, 218, 218);
+}
+  .absolute_offer {
+    position: absolute;
+    left: 100px;
+
+}
+  .absolute_offer h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #D5546E, #D5546E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0;
+    margin-top: 80px;
+}
+.absolute_offer p{
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 120px;
+    margin-top: 10px;
+}
+.absolute_offer a {
+    font-family: "Montserrat";
+    color: black;
+    padding: 15px 50px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #DBEC7B;
+    border: 1px solid #EDEDED;
+    border-radius: 19px;
+    transition-duration: .4s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.absolute_offer a:hover {
+    outline: 1px solid grey;
+    background-color: white;
+    color:black;
+}
+.itcss__item_2_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/5c96b6bf36b31101332e4596c565174a.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-color: #FFDFEC;
+}
+.absolute_offer_2 {
+    position: absolute;
+    background-color: rgba(255, 223, 236, 0.95);
+    width: 906px;
+    height: 500px;
+    left: 50%;        
+    transform: translate(-50%, 0);
+}
+.absolute_offer_2 h2{
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(0deg, #490362, #490362);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.absolute_offer_2 p {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0px;
+    color: #000000;
+    margin-bottom: 110px;
+}
+.absolute_offer_2 a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+    padding: 15px 70px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    background-color:#F49797;
+    background-size: 70%;
+    border: 0px solid #EDEDED;
+    border-radius: 19px;
+    transition-duration: .5s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(4px);
+}
+.absolute_offer_2 a:hover {
+    outline: 1px solid grey;
+    background-color: white;
+    color:black;
+}
+.itcss__item_3_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/Capture.PNG);
+    background-repeat: no-repeat;
+    background-size: 69% 69%;
+}
+.absolute_offer_3 {
+    right: 100px;
+    position: absolute;
+    width: fit-content;
+    max-height: 100%;
+}
+.absolute_offer_3 h2{
+    margin-top: 90px;
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 79px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #B425A5;
+}
+.absolute_offer_3 p {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+.absolute_offer_3 a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+    padding: 15px 70px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #DBEC7B;
+    border: 1px solid #EDEDED;
+    border-radius: 19px;
+    transition-duration: .4s;
+}
+.absolute_offer_3 a:hover {
+    outline: 1px solid grey;
+    background-color: white;
+    color:black;
+}
+.infinite-line {
+    background: url(../images/Group\ 8\ \(3\).png) repeat-x;
+    width: 100%;
+    height: 23px;
+    margin-top: 81px;
+    animation: animate 8s linear infinite;
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+@keyframes animate {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -1073px 0px;
+    }
+}
+.infinite-line:hover {
+animation-play-state: paused
+}
+.cards_flex {
+    width: 1330px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    width: 305px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 3px;
+    outline: 1px solid rgb(221, 221, 221);
+    transition-duration: 0.4s;
+    overflow: hidden;
+    outline-style: dotted;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-color: rgb(252, 215, 241);
+}
+.img_card_div {
+    height: max-content;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.card img {
+    transition-duration: 0.4s;
+    overflow: visible;
+    width: 305px;
+    height: auto;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+.price {
+    color: rgb(177, 177, 177);
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.flower_name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
