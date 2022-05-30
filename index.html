@@ -2,7 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +19,7 @@
         <div class ="logo">
            <a href=""><img src="images/47a195bd2546d5ea3ede4f19cac60342.png"></a>
         </div>
-        <div>
+        <div id="navigation_header_for_js">
             <div class="dropdown">
                 <button class="underline-one nav-link dropbtn nav-link_add">ЦВЕТЫ</button>
                 <div class="dropdown-content">
@@ -45,13 +50,23 @@
                 </div>
             </div>
             <a href="" class="underline-one nav-link">КОНТАКТЫ</a>
-            <form> 
+            <form class="header_form"> 
                 <input type="text" class="search" placeholder="Поиск">
                 <input type="image" src="images/free-png.ru-44.png" value="Search">
               </form>
             <p class="info_header">Пн-Пт: 10:00-17:00<br>+37212423523</p>
         </div>
     </header>
+    <div class="widget">
+      <h3 class="widget-title">Категории</h3>
+      <ul class="widget-list">
+        <li><a href="">Дизайн</a></li>
+        <li><a href="">Фотошоп</a></li>
+        <li><a href="">Типографика</a></li>
+        <li><a href="">Музыка</a></li>
+        <li><a href="">Видео</a></li>
+      </ul>
+    </div>
     <main>
         <div class="itcss">
             <div class="itcss__wrapper">
@@ -60,7 +75,7 @@
                   <div class="absolute_offer">
                       <h2> НАСТУПИЛ СЕЗОН ПИОНОВ! </h2>
                       <p>В эту пору пора рассмотреть наши новые предложения.</p>
-                      <p><a class = "shine-button" href="">Ознакомиться ></a></p>
+                      <p><a class = "shine-button" href="">Ознакомиться</a></p>
                   </div>
                   <img src="images/d3a499e69639e8f9c63d6b44d3265b65.png" alt="...">
                 </div>
@@ -69,7 +84,7 @@
                     <div class="absolute_offer_2">
                       <h2>romantic♡season</h2>
                       <p>Подари своей половинке немного романтики!</p>
-                      <p><a class="shine-button" href="">Подробнее ></a></p>
+                      <p><a class="shine-button" href="">Подробнее</a></p>
                     </div>
                   </div>
                 </div>
@@ -78,7 +93,7 @@
                     <div class="absolute_offer_3">
                       <h2>Сделай каждый день особенным</h2>
                       <p>Удиви нашими цветами родных и близких!</p>
-                      <p><a class="shine-button" href="">Перейти ></a></p>
+                      <p><a class="shine-button" href="">Перейти</a></p>
                     </div>
                   </div>
                 </div>
@@ -115,7 +130,7 @@
     </main>
     <footer>
       <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ<br>Узнавайте о новостях первыми!</p>
-      <form> 
+      <form class="footer_form"> 
         <input type="text" class="search" placeholder="e-mail">
         <input type="button" value="Подписаться">
       </form>

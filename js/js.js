@@ -507,4 +507,86 @@ class ItcSimpleSlider {
     }
   
   }
-  
+// ----------------------------------------------------------------------------
+// if($(window).width() <= '1450px'){
+
+// }
+// function(){
+//   var screenWidth = $(window).width();
+//   var screenHeight = $(window).height();
+//   s = Snap(screenWidth, screenHeight);
+//   s.addClass("menu");
+//   s. 
+// }
+if(window.outerWidth < 1449){
+  let navigation = document.getElementById('navigation_header_for_js');
+  let widget = document.getElementsByClassName('widget');
+  navigation.innerHTML = `<img src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">`;
+  navigation.addEventListener('click', e =>{
+    if(!widget[0].classList.contains('widget-parameter')){
+        widget[0].style.display = 'block';
+        widget[0].classList.add('widget-parameter');
+    }else{
+      widget[0].style.display = 'none';
+      widget[0].classList.remove('widget-parameter');
+    }
+  });
+}
+window.addEventListener(`resize`, e => {
+  e.preventDefault();
+  const screenWidth = window.outerWidth;
+  const screenHeight = window.outerHeight;
+  let navigation = document.getElementById('navigation_header_for_js');
+  let widget = document.getElementsByClassName('widget');
+  if(screenWidth < 1449) {
+    navigation.innerHTML = `<img src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">`;
+    navigation.addEventListener('click', e =>{
+      if(!widget[0].classList.contains('widget-parameter')){
+          widget[0].style.display = 'block';
+          widget[0].classList.add('widget-parameter');
+      }else{
+        widget[0].style.display = 'none';
+        widget[0].classList.remove('widget-parameter');
+      }
+  });
+  }if(screenWidth > 1449){
+    navigation.removeEventListener('click', e =>{
+
+  });
+    navigation.innerHTML =            ` <div class="dropdown">
+    <button class="underline-one nav-link dropbtn nav-link_add">ЦВЕТЫ</button>
+    <div class="dropdown-content">
+      <a href="#">СРЕЗАННЫЕ ЦВЕТЫ</a>
+      <a href="#">БУКЕТЫ</a>
+      <a href="#">ВЕНКИ</a>
+      <a href="#">ЦВЕТЫ В ГОРШКАХ</a>
+      <a href="#">УХОД ЗА ЦВЕТАМИ</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="underline-one nav-link dropbtn nav-link_add">УХОД</button>
+    <div class="dropdown-content">
+      <a href="#">ЗЕМЛЯ</a>
+      <a href="#">УДОБРЕНИЯ</a>
+      <a href="#">ЗДОРОВЬЕ РАСТЕНИЙ</a>
+      <a href="#">ГОРШКИ</a>
+      <a class="end_massive" href="#">КАК УХАЖИВАТЬ?</a>
+    </div>
+</div>
+<a href="" class="underline-one nav-link">ЗАКАЗ И ДОСТАВКА</a>
+<div class="dropdown">
+    <button class="underline-one nav-link dropbtn nav-link_add">О НАС</button>
+    <div class="dropdown-content">
+      <a href="#">ПЕРСОНАЛ</a>
+      <a href="#">ПАРТНЕРЫ</a>
+      <a href="#">О НАС</a>
+    </div>
+</div>
+<a href="" class="underline-one nav-link">КОНТАКТЫ</a>
+<form class="header_form"> 
+    <input type="text" class="search" placeholder="Поиск">
+    <input type="image" src="images/free-png.ru-44.png" value="Search">
+  </form>
+<p class="info_header">Пн-Пт: 10:00-17:00<br>+37212423523</p>`
+  }
+}, false);
