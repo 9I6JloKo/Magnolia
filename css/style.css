@@ -53,8 +53,8 @@ header div {
     right: 0;
     bottom: -3px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: rgb(167, 167, 167); /* Цвет подчеркивания при исчезании линии*/
+    height: 1px; /* Высота линии */
+    background-color: #e1e7bc; /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.4s; /* Время эффекта */
 }
 
@@ -65,15 +65,17 @@ header div {
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: #d5ec51; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.4s;  /* Время эффекта */
+    height: 1px; /* Высота линии */
+    background-color: rgb(167, 167, 167); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.3s;  /* Время эффекта */
 }
 .nav-link_add:after {
     top: 0px;
 }
 .dropbtn {
-    font-size: 17px;
+    font-family: "Verdana";
+    font-size: 16px;
+    font-weight: 700;
     border: none;
     background-color: white;
     margin-top: 39px;
@@ -296,7 +298,7 @@ main {
     font-size: 28px;
     text-align: center;
     color: #000000;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     margin-top: 10px;
 }
 .absolute_offer a {
@@ -308,7 +310,7 @@ main {
     text-align: center;
     background-color: #DBEC7B;
     border: 1px solid #EDEDED;
-    border-radius: 19px;
+    border-radius: 8px;
     transition-duration: .4s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -370,7 +372,7 @@ main {
     background-color:#F49797;
     background-size: 70%;
     border: 0px solid #EDEDED;
-    border-radius: 19px;
+    border-radius: 8px;
     transition-duration: .5s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(4px);
@@ -414,7 +416,7 @@ main {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 39px;
     /* identical to box height */
 
@@ -436,7 +438,7 @@ main {
     text-align: center;
     background-color: #DBEC7B;
     border: 1px solid #EDEDED;
-    border-radius: 19px;
+    border-radius: 8px;
     transition-duration: .4s;
 }
 .absolute_offer_3 a:hover {
@@ -466,10 +468,12 @@ main {
 animation-play-state: paused
 }
 .cards_flex {
+    flex-wrap: wrap;
     width: 1330px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 70px;
 }
 .card {
     width: 305px;
@@ -479,11 +483,13 @@ animation-play-state: paused
     background: #FFFFFF;
     border-radius: 3px;
     outline: 1px solid rgb(221, 221, 221);
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     overflow: hidden;
     outline-style: dotted;
+    margin-bottom: 40px;
 }
 .card:hover {
+    transition-duration: 0.3s;
     cursor: pointer;
     transform: scale(1.05);
     outline-offset: 2px;
@@ -520,4 +526,45 @@ animation-play-state: paused
     text-align: center;
     margin: 10px;
     margin-bottom: 20px;
+}
+.button_more_flowers {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    padding: 10px 35px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(253, 249, 228);
+    border-radius: 4px;
+    font-size: 20px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+} 
+.button_more_flowers:hover {
+    outline: 1px solid grey;
+    background-color: white;
+    color:black;
+}
+.shine-button {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    box-shadow: 0 8px 15px rgba(250, 135, 202, 0.1);
+    transition: .3s;
+}
+.shine-button:hover {
+box-shadow: 0 15px 20px rgba(255, 223, 247, 0.4);
+transform: translateY(-3px);
+}
+footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 137px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
 }
