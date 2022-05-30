@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
       autoplay: true,
       interval: 6000,
-      swipe: false,
+      swipe: true,
     });
   });
 class ItcSimpleSlider {
