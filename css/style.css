@@ -755,6 +755,9 @@ footer img {
     .header_form_mobile{
         display: none;
     }
+    footer form input[type="text"] {
+        width: 80%;
+    }
 }
 @media (max-width:350px){
     .logo {
@@ -762,6 +765,9 @@ footer img {
     }
     .header_form_mobile{
         display: none;
+    }
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        font-size: 12px;
     }
 }
 @media (max-width:250px){
