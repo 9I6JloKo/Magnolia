@@ -568,3 +568,39 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+footer form {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+}
+footer form input[type="text"] {
+    width: 250px;
+}
+footer form input[type="button"] {
+    font-family:  "Open Sans";
+    height: 75%;
+    width: 35%;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border: 1px solid black;
+}
+footer form input[type="button"]:hover {
+    background-color: white;
+    color: black;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    width: 17%;
+    justify-content: end;
+}
+footer img {
+    width: 50px;
+    height: auto;
+}
