@@ -518,29 +518,19 @@ class ItcSimpleSlider {
 //   s.addClass("menu");
 //   s. 
 // }
-if(window.outerWidth < 1449){
-  let navigation = document.getElementById('navigation_header_for_js');
-  let widget = document.getElementsByClassName('widget');
-  navigation.innerHTML = `<img src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">`;
-  navigation.addEventListener('click', e =>{
-    if(!widget[0].classList.contains('widget-parameter')){
-        widget[0].style.display = 'block';
-        widget[0].classList.add('widget-parameter');
-    }else{
-      widget[0].style.display = 'none';
-      widget[0].classList.remove('widget-parameter');
-    }
-  });
-}
-window.addEventListener(`resize`, e => {
+window.addEventListener(`load`, e => {
   e.preventDefault();
   const screenWidth = window.outerWidth;
   const screenHeight = window.outerHeight;
   let navigation = document.getElementById('navigation_header_for_js');
   let widget = document.getElementsByClassName('widget');
   if(screenWidth < 1449) {
-    navigation.innerHTML = `<img src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">`;
-    navigation.addEventListener('click', e =>{
+    navigation.innerHTML = `<form class="header_form header_form_mobile"> 
+    <input type="text" class="search" placeholder="Поиск">
+    <input type="image" src="images/free-png.ru-44.png" value="Search">
+</form><img id = "nav_mobile" src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">
+<p id="info_header_2" class="info_header">Пн-Пт: 10:00-17:00 │ +37254847523              </p>`;
+document.getElementById('nav_mobile').addEventListener('click', e =>{
       if(!widget[0].classList.contains('widget-parameter')){
           widget[0].style.display = 'block';
           widget[0].classList.add('widget-parameter');
@@ -549,10 +539,44 @@ window.addEventListener(`resize`, e => {
         widget[0].classList.remove('widget-parameter');
       }
   });
-  }if(screenWidth > 1449){
-    navigation.removeEventListener('click', e =>{
-
+  }
+}, false);
+window.addEventListener(`resize`, e => {
+  e.preventDefault();
+  const screenWidth = window.outerWidth;
+  const screenHeight = window.outerHeight;
+  let navigation = document.getElementById('navigation_header_for_js');
+  let widget = document.getElementsByClassName('widget');
+  if(screenWidth < 1449) {
+    navigation.innerHTML = `<form class="header_form header_form_mobile"> 
+    <input type="text" class="search" placeholder="Поиск">
+    <input type="image" src="images/free-png.ru-44.png" value="Search">
+</form><img id = "nav_mobile" src="images/menu.png" style="position:absolute;right:10px;cursor:pointer">
+<p id="info_header_2" class="info_header">Пн-Пт: 10:00-17:00 │ +37254847523              </p>`;
+document.getElementById('nav_mobile').addEventListener('click', e =>{
+      if(!widget[0].classList.contains('widget-parameter')){
+          widget[0].style.right = widget[0].outerWidth + "px";
+          widget[0].style.right = widget[0].outerWidth + "px";
+          widget[0].style.display = 'block';
+          widget[0].classList.add('widget-parameter');
+      }else{
+        widget[0].style.display = 'none';
+        widget[0].classList.remove('widget-parameter');
+      }
   });
+  }else if(screenWidth > 1449){
+    document.getElementsByClassName('info_header')[0].style.marginRight = "15px";
+    document.getElementById('nav_mobile').removeEventListener('click', e =>{
+      if(!widget[0].classList.contains('widget-parameter')){
+        widget[0].style.display = 'block';
+        widget[0].classList.add('widget-parameter');
+    }else{
+      widget[0].style.display = 'none';
+      widget[0].classList.remove('widget-parameter');
+    }
+    });
+    widget[0].style.display = 'none';
+    widget[0].classList.remove('widget-parameter');
     navigation.innerHTML =            ` <div class="dropdown">
     <button class="underline-one nav-link dropbtn nav-link_add">ЦВЕТЫ</button>
     <div class="dropdown-content">
