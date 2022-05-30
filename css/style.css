@@ -170,7 +170,7 @@ form input[type="image"] {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #222;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -181,9 +181,9 @@ form input[type="image"] {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #222;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 15px;
+    padding-left: 16px;
     text-decoration: unset;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -206,7 +206,7 @@ form input[type="image"] {
     letter-spacing: 1px;
     color: #444;
     transition: .3s linear;
-    font-size: 15px;
+    font-size: 16px;
 }
 .link-widget {
     font-weight: 600;
@@ -724,6 +724,10 @@ footer img {
 @media (max-width:950px){
     .info_header_2 {
         display: block; /*asd*/
+        font-size: 14px;
+    }
+    .widget-title, .widget-title_2, .widget-list a {
+        font-size: 14px;
     }
     #info_header_2 {
         display: none;
@@ -739,6 +743,9 @@ footer img {
     }
     .card img {
         width: 200px;
+    }
+    footer div {
+        width: fit-content;
     }
 }
 @media (max-width:550px){
