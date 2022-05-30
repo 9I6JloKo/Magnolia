@@ -717,3 +717,27 @@ footer img {
         display: none;
     }
 }
+@media (max-width:550px){
+    .logo {
+        margin-left: 30%;
+    }
+    .header_form_mobile{
+        display: none;
+    }
+}
+@media (max-width:350px){
+    .logo {
+        margin-left: 20%;
+    }
+    .header_form_mobile{
+        display: none;
+    }
+}
+@media (max-width:250px){
+    .logo {
+        margin-left: 5%;
+    }
+    .header_form_mobile{
+        display: none;
+    }
+}
