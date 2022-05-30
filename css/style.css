@@ -723,7 +723,7 @@ footer img {
 }
 @media (max-width:950px){
     .info_header_2 {
-        display: block;
+        display: block; /*asd*/
     }
     #info_header_2 {
         display: none;
