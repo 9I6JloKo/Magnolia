@@ -151,6 +151,77 @@ form input[type="image"] {
     border-left: 1px solid grey;
     padding-left: 5px;
 }
+* {box-sizing: border-box; margin: 0;}
+.widget {
+  padding: 20px 30px;
+  background: white;
+  font-family: 'Verdana', sans-serif;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+.widget-parameter {
+}
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid rgb(157, 157, 157);
+}
+.widget-title_2 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: unset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid rgb(157, 157, 157);
+    transition-duration: 0.4s;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  margin-right: 13px;
+}
+.widget-list a {
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    padding: 5px 0; 
+    letter-spacing: 1px;
+    color: #444;
+    transition: .3s linear;
+    font-size: 15px;
+}
+.link-widget {
+    font-weight: 600;
+    text-decoration: unset;
+    transition: .3s linear;
+    width: 100%;
+}
+.link-widget:hover {
+    color: #ffa3f4;
+}
+.info_header_2 {
+    margin-top: 30px;
+    display: none;
+}
+.widget-list a:hover, .widget-title_2:hover {color: #ffa3f4;}
 main {
     z-index: 15;
 }
@@ -485,6 +556,8 @@ animation-play-state: paused
     text-align: center;
     background: #FFFFFF;
     border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
     outline: 1px solid rgb(221, 221, 221);
     transition-duration: 0.2s;
     overflow: hidden;
@@ -571,6 +644,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 footer form {
     height: 40px;
@@ -611,78 +685,6 @@ footer img {
     width: 50px;
     height: auto;
 }
-
-* {box-sizing: border-box; margin: 0;}
-.widget {
-  padding: 20px 30px;
-  background: white;
-  font-family: 'Verdana', sans-serif;
-  display: none;
-  position: fixed;
-  height: 100vh;
-  right: 0;
-  z-index: 9999;
-  background-color: white;
-  transition-duration: 0.4s;
-}
-.widget-parameter {
-}
-.widget-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #222;
-  font-size: 15px;
-  padding-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-left: 5px solid rgb(157, 157, 157);
-}
-.widget-title_2 {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #222;
-    font-size: 15px;
-    font-weight: 600;
-    padding-left: 15px;
-    text-decoration: unset;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-left: 5px solid rgb(157, 157, 157);
-    transition-duration: 0.4s;
-}
-.widget-list {
-  padding: 0;
-  list-style: none;
-}
-.widget-list a:before {
-  margin-right: 13px;
-}
-.widget-list a {
-    font-weight: 500;
-    text-decoration: none;
-    outline: none;
-    display: block;
-    padding: 5px 0; 
-    letter-spacing: 1px;
-    color: #444;
-    transition: .3s linear;
-    font-size: 15px;
-}
-.link-widget {
-    font-weight: 600;
-    text-decoration: unset;
-    transition: .3s linear;
-    width: 100%;
-}
-.link-widget:hover {
-    color: #ffa3f4;
-}
-.info_header_2 {
-    margin-top: 30px;
-    display: none;
-}
-.widget-list a:hover, .widget-title_2:hover {color: #ffa3f4;}
 @media (max-width:1800px) and (max-width:1701px) {
     .logo {
         margin-right: 9%;
@@ -709,12 +711,34 @@ footer img {
         margin-right: 4%;
     }
 }
+@media (max-width:1449px) {
+    .cards_flex {
+        width: 60%;
+    }
+}
+@media (max-width:1149px) {
+    .cards_flex {
+        width: 80%;
+    }
+}
 @media (max-width:950px){
     .info_header_2 {
         display: block;
     }
     #info_header_2 {
         display: none;
+    }
+    .cards_flex {
+        width: 100%;
+    }
+}
+@media (max-width:650px){
+    .card {
+        width: 200px;
+        height: 380px;
+    }
+    .card img {
+        width: 200px;
     }
 }
 @media (max-width:550px){
