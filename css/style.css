@@ -218,7 +218,7 @@ form input[type="image"] {
     color: #ffa3f4;
 }
 .info_header_2 {
-    margin-top: 30px;
+    margin-top: 15px;
     display: none;
 }
 .widget-list a:hover, .widget-title_2:hover {color: #ffa3f4;}
@@ -727,7 +727,9 @@ footer img {
         font-size: 14px;
     }
     .widget-title, .widget-title_2, .widget-list a {
-        font-size: 14px;
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
     }
     #info_header_2 {
         display: none;
@@ -768,6 +770,11 @@ footer img {
     }
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
+        margin-top: 5px;
+    }
+    .widget-list a {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 @media (max-width:250px){
