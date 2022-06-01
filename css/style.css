@@ -751,8 +751,10 @@ footer img {
         margin-bottom: 6px;
     }
     .card {
-        width: 195px;
-        height: 380px;
+        width: 235px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .card img {
         width: 100%;
@@ -783,15 +785,23 @@ footer img {
     .itcss {
         margin-top: 25px;
     }
+    .card {
+        width: 185px;
+        height: 320px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card img {
+        width: 100%;
+    }
 }
-@media (max-width:429px){
+@media (max-width:415px){
     .card {
         width: 70%;
         height: fit-content;
     }
     .card img {
         width: 100%;
-        margin-bottom: 10px;
     }
 }
 @media (max-width:350px){
