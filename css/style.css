@@ -731,11 +731,6 @@ footer img {
         display: block; /*asd*/
         font-size: 14px;
     }
-    .widget-title, .widget-title_2, .widget-list a {
-        font-size: 12px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-    }
     #info_header_2 {
         display: none;
     }
@@ -744,9 +739,14 @@ footer img {
     }
 }
 @media (max-width:650px){
+    .widget-title, .widget-title_2, .widget-list a {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
     .card {
         width: 190px;
-        height: 385px;
+        height: 345px;
     }
     .card img {
         width: 200px;

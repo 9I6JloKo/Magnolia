@@ -577,14 +577,13 @@ document.getElementById('nav_mobile').addEventListener('click', e =>{
     });
     widget[0].style.display = 'none';
     widget[0].classList.remove('widget-parameter');
-    navigation.innerHTML =            ` <div class="dropdown">
+    navigation.innerHTML =        `    <div class="dropdown">
     <button class="underline-one nav-link dropbtn nav-link_add">ЦВЕТЫ</button>
     <div class="dropdown-content">
       <a href="#">СРЕЗАННЫЕ ЦВЕТЫ</a>
       <a href="#">БУКЕТЫ</a>
       <a href="#">ВЕНКИ</a>
       <a href="#">ЦВЕТЫ В ГОРШКАХ</a>
-      <a href="#">УХОД ЗА ЦВЕТАМИ</a>
     </div>
 </div>
 <div class="dropdown">
@@ -598,19 +597,21 @@ document.getElementById('nav_mobile').addEventListener('click', e =>{
     </div>
 </div>
 <a href="" class="underline-one nav-link">ЗАКАЗ И ДОСТАВКА</a>
-<div class="dropdown">
+<a href="" class="underline-one nav-link">О НАС</a>
+<!-- <div class="dropdown">
     <button class="underline-one nav-link dropbtn nav-link_add">О НАС</button>
     <div class="dropdown-content">
       <a href="#">ПЕРСОНАЛ</a>
       <a href="#">ПАРТНЕРЫ</a>
       <a href="#">О НАС</a>
     </div>
-</div>
+</div> -->
 <a href="" class="underline-one nav-link">КОНТАКТЫ</a>
 <form class="header_form"> 
     <input type="text" class="search" placeholder="Поиск">
     <input type="image" src="images/free-png.ru-44.png" value="Search">
-  </form>
-<p class="info_header">Пн-Пт: 10:00-17:00<br>+37212423523</p>`
+</form>
+<p class="info_header">Пн-Пт: 10:00-17:00<br>+37254847523</p>
+</div>`
   }
 }, false);
