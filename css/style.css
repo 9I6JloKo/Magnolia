@@ -571,10 +571,12 @@ animation-play-state: paused
     overflow: hidden;
     outline-style: dotted;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card:hover {
     transition-duration: 0.3s;
-    cursor: pointer;
     transform: scale(1.05);
     outline-offset: 2px;
     outline-style: solid;
@@ -582,24 +584,19 @@ animation-play-state: paused
 }
 .img_card_div {
     height: max-content;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
 .card img {
     transition-duration: 0.4s;
     overflow: visible;
-    width: 305px;
-    height: auto;
+    width: 100%;
+    height: max-content;
 }
 .card:hover img {
     transform: scale(1.05);
 }
-.price {
-    color: rgb(177, 177, 177);
-    font-size: larger;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-}
+
 .flower_name {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -609,6 +606,15 @@ animation-play-state: paused
     text-decoration: none;
     text-align: center;
     margin: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.price {
+    color: rgb(177, 177, 177);
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 .button_more_flowers {
@@ -745,12 +751,11 @@ footer img {
         margin-bottom: 6px;
     }
     .card {
-        width: 190px;
-        height: 345px;
+        width: 195px;
+        height: 380px;
     }
     .card img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
     }
     footer div {
         width: fit-content;
@@ -777,6 +782,16 @@ footer img {
     }
     .itcss {
         margin-top: 25px;
+    }
+}
+@media (max-width:429px){
+    .card {
+        width: 70%;
+        height: fit-content;
+    }
+    .card img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width:350px){
