@@ -222,6 +222,14 @@ form input[type="image"] {
     display: none;
 }
 .widget-list a:hover, .widget-title_2:hover {color: #ffa3f4;}
+.header_form_mobile_main {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    display: none;
+    height: fit-content;
+}
 main {
     z-index: 15;
 }
@@ -678,9 +686,6 @@ footer div {
     width: 17%;
     justify-content: end;
 }
-.header_form_mobile {
-    margin-left: 0;
-}
 footer img {
     width: 50px;
     height: auto;
@@ -740,11 +745,12 @@ footer img {
 }
 @media (max-width:650px){
     .card {
-        width: 200px;
-        height: 380px;
+        width: 190px;
+        height: 385px;
     }
     .card img {
         width: 200px;
+        height: 200px;
     }
     footer div {
         width: fit-content;
@@ -760,13 +766,22 @@ footer img {
     footer form input[type="text"] {
         width: 80%;
     }
+    footer{
+        height: fit-content;
+    }
+    .header_form_mobile_main{
+        display: flex;
+    }
+    .header_form_mobile_main input[type="text"] {
+        width: 65vw;
+    }
+    .itcss {
+        margin-top: 25px;
+    }
 }
 @media (max-width:350px){
     .logo {
         margin-left: 20%;
-    }
-    .header_form_mobile{
-        display: none;
     }
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
@@ -780,8 +795,5 @@ footer img {
 @media (max-width:250px){
     .logo {
         margin-left: 5%;
-    }
-    .header_form_mobile{
-        display: none;
     }
 }
