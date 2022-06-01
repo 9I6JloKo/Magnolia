@@ -795,13 +795,14 @@ footer img {
         width: 100%;
     }
 }
-@media (max-width:415px){
+@media (max-width:417px){
     .card {
         width: 70%;
         height: fit-content;
     }
     .card img {
         width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width:350px){
