@@ -524,6 +524,13 @@ window.addEventListener(`load`, e => {
   const screenHeight = window.outerHeight;
   let navigation = document.getElementById('navigation_header_for_js');
   let widget = document.getElementsByClassName('widget');
+  if(screenWidth < 849) {
+    bad_picture.src = "images/flower_bad.jpg"
+  }else if (screenWidth < 1249){
+    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
+  }else{
+    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
+  }
   if(screenWidth < 1449) {
     navigation.innerHTML = `<form class="header_form header_form_mobile"> 
     <input type="text" class="search" placeholder="Поиск">
@@ -543,17 +550,17 @@ document.getElementById('nav_mobile').addEventListener('click', e =>{
 }, false);
 window.addEventListener(`resize`, e => {
   e.preventDefault();
-  // let bad_picture = document.getElementById('bad_picture')
-  // const screenWidthPic = bad_picture.clientWidth;
-  // if(screenWidthPic < 1349) {
-  //   bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
-  // }else{
-  //   bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
-  // }
   const screenWidth = window.outerWidth;
   const screenHeight = window.outerHeight;
   let navigation = document.getElementById('navigation_header_for_js');
   let widget = document.getElementsByClassName('widget');
+  if(screenWidth < 849) {
+    bad_picture.src = "images/flower_bad.jpg"
+  }else if (screenWidth < 1249){
+    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
+  }else{
+    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
+  }
   if(screenWidth < 1449) {
     navigation.innerHTML = `<form class="header_form header_form_mobile"> 
     <input type="text" class="search" placeholder="Поиск">
