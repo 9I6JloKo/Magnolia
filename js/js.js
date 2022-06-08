@@ -528,8 +528,6 @@ window.addEventListener(`load`, e => {
     bad_picture.src = "images/flower_bad.jpg"
   }else if (screenWidth < 1169){
     bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
-  }else{
-    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
   }
   if(screenWidth < 1449) {
     navigation.innerHTML = `<form class="header_form header_form_mobile"> 
@@ -556,10 +554,10 @@ window.addEventListener(`resize`, e => {
   let widget = document.getElementsByClassName('widget');
   if(screenWidth < 849) {
     bad_picture.src = "images/flower_bad.jpg"
-  }else if (screenWidth < 1249){
+  }else if (screenWidth < 1169){
     bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
   }else{
-    bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
+    bad_picture.src = "images/flower_1.png"
   }
   if(screenWidth < 1449) {
     navigation.innerHTML = `<form class="header_form header_form_mobile"> 
