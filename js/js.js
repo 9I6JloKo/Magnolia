@@ -526,7 +526,7 @@ window.addEventListener(`load`, e => {
   let widget = document.getElementsByClassName('widget');
   if(screenWidth < 849) {
     bad_picture.src = "images/flower_bad.jpg"
-  }else if (screenWidth < 1249){
+  }else if (screenWidth < 1169){
     bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.jpg"
   }else{
     bad_picture.src = "images/d3a499e69639e8f9c63d6b44d3265b65.png"
