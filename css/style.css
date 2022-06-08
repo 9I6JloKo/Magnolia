@@ -405,7 +405,7 @@ main {
     width: 100%;
     height: 100%;
     background: url(../images/5c96b6bf36b31101332e4596c565174a.jpg);
-    background-size: 100% 200%;
+    background-size: 2000px 200%;
     background-repeat: no-repeat;
     background-color: #FFDFEC;
 }
@@ -472,7 +472,7 @@ main {
     height: 100%;
     background: url(../images/Capture.PNG);
     background-repeat: no-repeat;
-    background-size: 69% 69%;
+    background-size: 1300px 69%;
 }
 .absolute_offer_3 {
     right: 100px;
@@ -731,6 +731,81 @@ footer img {
     .cards_flex {
         width: 80%;
     }
+    .absolute_offer {
+        width: 90%;
+       left:50%;
+       top: 35%;
+       transform: translateY(-50%) translateX(-50%);
+    }
+    .absolute_offer h2{
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 50px;
+    }
+    .absolute_offer p{
+    font-size: 25px;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    }
+    .absolute_offer a {
+    padding: 10px 35px;
+    font-size: 20px;
+    }
+    .absolute_offer_2 {
+    width: 85%;
+    height: 500px;     
+    }
+    .absolute_offer_2 h2{
+    margin-top: 130px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+    }
+    .absolute_offer_2 p {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    }
+    .absolute_offer_2 a {
+    padding: 10px 50px;
+    font-size: 20px;
+    }
+    .itcss__item_3_img {
+    background-size: 1300px 69%;
+    background-position: -100px 0px;
+    }
+    .absolute_offer_3 {
+    right: 0px;
+    position: absolute;
+    width: fit-content;
+    height: 500px;
+    max-height: none;
+    width: 100%;
+    }
+    .absolute_offer_3 h2{
+    margin-top: 120px;
+    font-size: 70px;
+    line-height: 79px;
+    margin-bottom: 0;
+    margin-right: 0;
+    text-shadow: 0 0 5px wheat;
+    }
+    .absolute_offer_3 p {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    }
+    .absolute_offer_3 a {
+    text-align: center;
+    color: #000000;
+    padding: 10px 40px;
+    font-size: 20px;
+    text-shadow: none;
+    line-height: normal;
+    }
 }
 @media (max-width:950px){
     .info_header_2 {
@@ -742,6 +817,24 @@ footer img {
     }
     .cards_flex {
         width: 100%;
+    }
+}
+@media (max-width:770px){
+    .absolute_offer h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .absolute_offer_2 h2 {
+        font-size: 50px;
+    }
+    .absolute_offer_3 h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .absolute_offer_3 {
+        top: 35%;
+        transform: translateY(-60%);
+        height: auto;
     }
 }
 @media (max-width:650px){
@@ -795,6 +888,32 @@ footer img {
         width: 100%;
     }
 }
+@media (max-width:450px){
+    .absolute_offer p {
+        font-size: 22px;
+    }
+    .absolute_offer a {
+        font-size: 17px;
+    }
+    .absolute_offer_2 h2 {
+        font-size: 45px;
+        }
+    .absolute_offer_2 p {
+        font-size: 22px;
+    }
+    .absolute_offer_3 p {
+        font-size: 22px;
+    }
+    .absolute_offer_2 a {
+        font-size: 17px;
+    }
+    .absolute_offer_3 a {
+        font-size: 17px;
+    }
+    .itcss__item a {
+        padding: 10px 15px;
+    }
+}
 @media (max-width:417px){
     .card {
         width: 70%;
@@ -817,6 +936,12 @@ footer img {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    .absolute_offer_2 {
+        background-color: rgba(255, 223, 236, 0.85);
+        width: 100%;
+    }
+}
+@media (max-width:300px){
 }
 @media (max-width:250px){
     .logo {
