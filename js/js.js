@@ -518,6 +518,7 @@ class ItcSimpleSlider {
 //   s.addClass("menu");
 //   s. 
 // }
+let d = 0
 window.addEventListener(`load`, e => {
   e.preventDefault();
   const screenWidth = window.outerWidth;
@@ -560,6 +561,7 @@ window.addEventListener(`resize`, e => {
     bad_picture.src = "images/flower_1.png"
   }
   if(screenWidth < 1449) {
+    d = 0
     navigation.innerHTML = `<form class="header_form header_form_mobile"> 
     <input type="text" class="search" placeholder="Поиск">
     <input type="image" src="images/free-png.ru-44.png" value="Search">
@@ -576,7 +578,8 @@ document.getElementById('nav_mobile').addEventListener('click', e =>{
         widget[0].classList.remove('widget-parameter');
       }
   });
-  }else if(screenWidth > 1449){
+  }else if(screenWidth > 1449 && d === 0){
+    d = 1
     document.getElementsByClassName('info_header')[0].style.marginRight = "15px";
     document.getElementById('nav_mobile').removeEventListener('click', e =>{
       if(!widget[0].classList.contains('widget-parameter')){
@@ -592,33 +595,25 @@ document.getElementById('nav_mobile').addEventListener('click', e =>{
     navigation.innerHTML =        `    <div class="dropdown">
     <button class="underline-one nav-link dropbtn nav-link_add">ЦВЕТЫ</button>
     <div class="dropdown-content">
-      <a href="#">СРЕЗАННЫЕ ЦВЕТЫ</a>
-      <a href="#">БУКЕТЫ</a>
-      <a href="#">ВЕНКИ</a>
-      <a href="#">ЦВЕТЫ В ГОРШКАХ</a>
+      <a href="cutedFlowers.html">СРЕЗАННЫЕ ЦВЕТЫ</a>
+      <a href="boukets.html">БУКЕТЫ</a>
+      <a href="venki.html">ВЕНКИ</a>
+      <a href="flowersGround.html">ЦВЕТЫ В ГОРШКАХ</a>
     </div>
 </div>
 <div class="dropdown">
     <button class="underline-one nav-link dropbtn nav-link_add">УХОД</button>
     <div class="dropdown-content">
-      <a href="#">ЗЕМЛЯ</a>
-      <a href="#">УДОБРЕНИЯ</a>
-      <a href="#">ЗДОРОВЬЕ РАСТЕНИЙ</a>
-      <a href="#">ГОРШКИ</a>
-      <a class="end_massive" href="#">КАК УХАЖИВАТЬ?</a>
+      <a href="ground.html">ЗЕМЛЯ</a>
+      <a href="goods.html">УДОБРЕНИЯ</a>
+      <a href="flowersHealth.html">ЗДОРОВЬЕ РАСТЕНИЙ</a>
+      <a href="grounds.html">ГОРШКИ</a>
+      <a class="end_massive" href="howToGrow.html">КАК УХАЖИВАТЬ?</a>
     </div>
 </div>
-<a href="" class="underline-one nav-link">ЗАКАЗ И ДОСТАВКА</a>
-<a href="" class="underline-one nav-link">О НАС</a>
-<!-- <div class="dropdown">
-    <button class="underline-one nav-link dropbtn nav-link_add">О НАС</button>
-    <div class="dropdown-content">
-      <a href="#">ПЕРСОНАЛ</a>
-      <a href="#">ПАРТНЕРЫ</a>
-      <a href="#">О НАС</a>
-    </div>
-</div> -->
-<a href="" class="underline-one nav-link">КОНТАКТЫ</a>
+<a href="delivering.html" class="underline-one nav-link">ЗАКАЗ И ДОСТАВКА</a>
+<a href="aboutUs.html" class="underline-one nav-link">О НАС</a>
+<a href="contacts.html" class="underline-one nav-link">КОНТАКТЫ</a>
 <form class="header_form"> 
     <input type="text" class="search" placeholder="Поиск">
     <input type="image" src="images/free-png.ru-44.png" value="Search">
