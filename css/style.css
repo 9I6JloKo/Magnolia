@@ -841,9 +841,7 @@ footer img {
 }
 @media (max-width:650px){
     .widget-title, .widget-title_2, .widget-list a {
-        font-size: 12px;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        font-size: 14px;
     }
     .card {
         width: 235px;
@@ -891,6 +889,7 @@ footer img {
     }
 }
 @media (max-width:450px){
+    
     .absolute_offer p {
         font-size: 22px;
     }
@@ -917,6 +916,7 @@ footer img {
     }
 }
 @media (max-width:417px){
+    
     .card {
         width: 70%;
         height: fit-content;
@@ -925,25 +925,27 @@ footer img {
         width: 100%;
         margin-bottom: 10px;
     }
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 }
 @media (max-width:350px){
     .logo {
         margin-left: 20%;
     }
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
-        font-size: 12px;
-        margin-top: 5px;
+        margin-top: 1px;
+        margin-bottom: 1px;
     }
-    .widget-list a {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .absolute_offer_2 {
-        background-color: rgba(255, 223, 236, 0.85);
-        width: 100%;
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        font-size: 13px;
     }
 }
 @media (max-width:300px){
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        font-size: 10px;
+    }
 }
 @media (max-width:250px){
     .logo {

@@ -410,27 +410,44 @@ footer img {
     }
     .info_1, .info_2, .info_3 {
         flex-direction: column;
+        margin: 0;
     }
     .info_2 {
         flex-direction: column-reverse;
     }
     .info_1 img, .info_2 img, .info_3 img {
-        margin-top: 30px;
+        margin-top: -2.5%;
+        margin-bottom: -2.5%;
         width: 30%;
         height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        z-index: 1;
     }
     .info_3 {
         margin-bottom: 30px;
     }
+    .info_3 img{
+        display: none;
+    }
     .text_1, .text_2, .text_3 {
         width: 55%;
         padding: 2.5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        z-index: 0;
+        margin: 0;
+    }
+    .text_1 {
+        padding-top: 2.5%;
+    }
+    .text_3 {
+        padding-bottom: 2.5%;
     }
 }
 @media (max-width:1149px) {
     .text_1, .text_2, .text_3 {
         width: 65%;
-        padding: 2.5%;
     }
     .info_1 img, .info_2 img, .info_3 img {
         width: 40%;
@@ -439,7 +456,7 @@ footer img {
 @media (max-width:950px){
     .info_header_2 {
         display: block; /*asd*/
-        font-size: 14px;
+        font-size: 15px;
     }
     #info_header_2 {
         display: none;
@@ -447,28 +464,20 @@ footer img {
     
     .text_1, .text_2, .text_3 {
         width: 80%;
-        padding: 2.5%;
     }
     .info_1 img, .info_2 img, .info_3 img {
         width: 50%;
     }
 }
-@media (max-width:770px){
-    
-}
 @media (max-width:650px){
     .widget-title, .widget-title_2, .widget-list a {
-        font-size: 12px;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        font-size: 14px;
     }
-    
     footer div {
         width: fit-content;
     }
     .text_1, .text_2, .text_3 {
         width: 95%;
-        padding: 6.5%;
     }
     .info_1 img, .info_2 img, .info_3 img {
         width: 65%;
@@ -503,23 +512,27 @@ footer img {
     }
 }
 @media (max-width:417px){
-    
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 }
 @media (max-width:350px){
     .logo {
         margin-left: 20%;
     }
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
-        margin-top: 5px;
     }
-    .widget-list a {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    
 }
 @media (max-width:300px){
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        font-size: 10px;
+    }
 }
 @media (max-width:250px){
     .logo {
