@@ -493,6 +493,9 @@ footer img {
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
     }
+    .text_1, .text_2, .text_3 {
+        font-size: 1em;
+    }
 }
 @media (max-width:450px){
     .info_1 img, .info_2 img, .info_3 img {
