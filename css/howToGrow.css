@@ -478,9 +478,26 @@ footer img {
     }
     .text_1, .text_2, .text_3 {
         width: 95%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .text_1 {
+        padding-top: 4%;
+    }
+    .text_3 {
+        padding-bottom: 4%;
+    }
+    .text_2 {
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .info_1 img, .info_2 img, .info_3 img {
         width: 65%;
+        margin-top: -5%;
+        margin-bottom: -5%;
+
     }
 }
 @media (max-width:550px){
