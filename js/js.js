@@ -518,7 +518,7 @@ class ItcSimpleSlider {
 //   s.addClass("menu");
 //   s. 
 // }
-let d = 0
+let d = 1
 window.addEventListener(`load`, e => {
   e.preventDefault();
   const screenWidth = window.outerWidth;
