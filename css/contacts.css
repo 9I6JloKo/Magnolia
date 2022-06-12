@@ -374,10 +374,11 @@ footer img {
         align-items: center;
     }
     .contactsAbout {
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
     #map {
-        height: 700px;
+        height: fit-content;
+        margin-bottom: 60px;
     }
 }
 @media (max-width:950px){
