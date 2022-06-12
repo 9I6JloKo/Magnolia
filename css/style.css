@@ -925,6 +925,10 @@ footer img {
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
     }
+    .absolute_offer_2 {
+        width: 100%;
+        background-color: rgba(255, 223, 236, 0.75);
+    }
 }
 @media (max-width:300px){
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
