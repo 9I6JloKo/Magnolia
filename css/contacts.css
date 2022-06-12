@@ -435,19 +435,9 @@ footer img {
         margin-bottom: 30px;
     }
 }
-@media (max-width:417px){
-    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-}
 @media (max-width:350px){
     .logo {
         margin-left: 20%;
-    }
-    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
-        margin-top: 1px;
-        margin-bottom: 1px;
     }
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
@@ -456,6 +446,10 @@ footer img {
 @media (max-width:300px){
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 10px;
+    }
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        margin-top: 3px;
+        margin-bottom: 3px;
     }
 }
 @media (max-width:250px){
@@ -466,5 +460,12 @@ footer img {
         font-size: 0.9em;
         line-height: 22px;
         padding: 20px 15px 20px 15px;
+    }
+    iframe {
+        height: 350px;
+    }
+    .info_header_2, .widget-title, .widget-title_2, .widget-list a {
+        margin-top: 1px;
+        margin-bottom: 1px;
     }
 }
