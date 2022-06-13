@@ -862,6 +862,9 @@ footer img {
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
     }
+    .itcss {
+        margin-top: 25px;
+    }
 }
 @media (max-width:550px){
     .logo {
@@ -881,9 +884,6 @@ footer img {
     }
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
-    }
-    .itcss {
-        margin-top: 25px;
     }
     .card {
         width: 185px;
