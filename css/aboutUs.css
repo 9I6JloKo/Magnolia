@@ -232,154 +232,135 @@ form input[type="image"] {
 }
 main {
     z-index: 15;
+    margin-bottom: 113px;
 }
-.page_name{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 8px ;
-}
-.cards_flex {
-    flex-wrap: wrap;
-    width: 1330px;
+.slim_div {
+    width:70%;
     margin: auto;
+}
+main h1 {
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 51px;
+    margin-bottom: 49px;
+    letter-spacing: 0.135em;
+}
+.h1_margin_top {
+    margin-top: 80px;
+    margin-bottom: -40px;
+}
+.h1_margin_top_2 {
+    margin-top: 100px;
+}
+.first_text {
+    margin: auto 30px;
+    background: #E3F194;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 47px 37px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.135em;
+}
+.team {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 70px;
-    margin-top: 50px;
-}
-.card {
-    width: 305px;
-    height: 500px;
-    background-color: white;
-    text-align: center;
-    background: #FFFFFF;
-    border-radius: 3px;
-    margin-left: 10px;
-    margin-right: 10px;
-    outline: 1px solid rgb(221, 221, 221);
-    transition-duration: 0.2s;
-    overflow: hidden;
-    outline-style: dotted;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-.card:hover {
-    transition-duration: 0.3s;
-    transform: scale(1.05);
-    outline-offset: 2px;
-    outline-style: solid;
-    outline-color: rgb(252, 215, 241);
-}
-.img_card_div {
-    height: max-content;
-    margin-bottom: 5px;
-    overflow: hidden;
-}
-.card img {
-    transition-duration: 0.4s;
-    overflow: visible;
-    width: 100%;
-    height: max-content;
-}
-.card:hover img {
-    transform: scale(1.05);
-}
-
-.flower_name {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-    color: rgb(75, 75, 75);
-    text-decoration: none;
     text-align: center;
-    margin: 10px;
-    margin-top: 0;
+    letter-spacing: 0.135em;
+    flex-wrap: wrap;
+}
+.team div {
+    margin-top: 40px;
+}
+.team_part {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: auto;
+}
+.team_part img{
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
-.price {
-    color: rgb(177, 177, 177);
-    font-size: larger;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    margin-top: 0px;
+.text_quality {
+    background: url(../images/background_aboutUs.jpg);
+    background-size: 100%;
+    background-position: 0px 40%;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    /* or 150% */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #FFFFFF;
+}
+.text_quality p {
+    text-align: justify;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.5) 90%, transparent 100%);
+    padding: 45px 150px;
+}
+.advantages {
+    background: #E3F194;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.advantages_part {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.135em;
+    color: #000000;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
-.button_more_flowers {
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    padding: 10px 35px;
-    color: black;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: rgb(253, 249, 228);
-    border-radius: 4px;
-    font-size: 20px;
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-} 
-.button_more_flowers:hover {
-    outline: 1px solid grey;
-    background-color: white;
-    color:black;
-}
-.shine-button {
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
-    box-shadow: 0 8px 15px rgba(250, 135, 202, 0.1);
-    transition: .3s;
-}
-.shine-button:hover {
-box-shadow: 0 15px 20px rgba(255, 223, 247, 0.4);
-transform: translateY(-3px);
-}
-.sale {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    background-color: rgb(253, 147, 133);
-    border-radius: 60% 0% 60% 0%;
-    padding: 4.5%;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    color: white;
-    font-weight: 600;
-    font-size: 105%;
-    text-shadow: 0px 0px 1px black;
-}
-.salePrice {
-    text-decoration: line-through;
-    color: rgb(209, 209, 209);
-    font-size: medium;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    margin-top: 0px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-}
-.saleNew {
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    background-color: rgb(180, 250, 196);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-.saleSelling {
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    color: white;
-    text-shadow: 0px 0px 1px black;
-    background-color: rgb(255, 113, 113);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+.advantages p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.135em;
+    color: #000000;
 }
 footer{
     font-family: 'Open Sans', sans-serif;
@@ -431,12 +412,20 @@ footer img {
     width: 50px;
     height: auto;
 }
+@media (max-width:1801px) {
+    .slim_div {
+        width: 75%;
+    }
+}
 @media (max-width:1701px) {
     .logo {
         margin-right: 9%;
     }
     form {
         margin-right: -1%;
+    }
+    .slim_div {
+        width: 80%;
     }
 }
 @media (max-width:1601px) {
@@ -446,48 +435,79 @@ footer img {
     form {
         margin-right: 0%;
     }
+    .slim_div {
+        width: 85%;
+    }
 }
-@media (max-width:1449px) {
+@media (max-width:1500px) {
     .logo {
         margin-right: 4%;
     }
-    .cards_flex {
-        width: 60%;
-        margin: auto
+    .slim_div {
+        width: 90%;
     }
 }
-@media (max-width:1149px) {
-    .cards_flex {
+@media (max-width:1400px) {
+    .slim_div {
+        width: 95%;
+    }
+}
+@media (max-width:1310px) {
+    .slim_div {
+        width: 97%;
+    }
+}
+@media (max-width:1100px) {
+    .advantages {
+        flex-direction: column;
+        width: 550px;
+        margin: auto;
+    }
+    .advantages_part {
         width: 80%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .advantages p {
+        text-align: justify;
+    }
+    .text_quality {
+        padding: 0;
     }
 }
 @media (max-width:950px){
     .info_header_2 {
         display: block; /*asd*/
-        font-size: 14px;
+        font-size: 15px;
     }
     #info_header_2 {
         display: none;
     }
-    .cards_flex {
-        width: 100%;
+    .text_quality p {
+        margin: 0;
+        padding: 20px 80px;
+    }
+}
+@media (max-width:700px){
+    .text_quality {
+        background-size: auto 100%;
+        background-position: 50%;
     }
 }
 @media (max-width:650px){
     .widget-title, .widget-title_2, .widget-list a {
         font-size: 14px;
     }
-    .card {
-        width: 235px;
-        height: 400px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .card img {
-        width: 100%;
-    }
     footer div {
         width: fit-content;
+    }
+    .advantages {
+        width: 85%;
+        margin: auto;
+        padding: 0;
+    }
+    .advantages_part {
+        width: 75%;
     }
 }
 @media (max-width:590px){
@@ -503,8 +523,18 @@ footer img {
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
     }
-    .itcss {
-        margin-top: 25px;
+    .first_text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .text_quality {
+        font-size: 24px;
+        line-height: 29px;
+        background-size: 100% auto;
+        background-position: 50%;
+    }
+    .text_quality p {
+        padding: 20px 30px;
     }
 }
 @media (max-width:550px){
@@ -514,27 +544,16 @@ footer img {
     footer{
         height: fit-content;
     }
-    .itcss {
-        margin-top: 25px;
-    }
-    .card {
-        width: 185px;
-        height: 320px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .card img {
-        width: 100%;
+}
+@media (max-width:450px){
+    .advantages_part {
+        width: 90%;
     }
 }
-@media (max-width:417px){
-    .card {
-        width: 70%;
-        height: fit-content;
-    }
-    .card img {
-        width: 100%;
-        margin-bottom: 10px;
+@media (max-width:420px){
+    .text_quality {
+        background-size: auto 100%;
+        background-position: 50%;
     }
 }
 @media (max-width:350px){
@@ -544,9 +563,21 @@ footer img {
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         font-size: 12px;
     }
-    .absolute_offer_2 {
+    main h1 {
+        font-size: 30px;
+    }
+    .first_text {
+        padding: 20px 20px;
+    }
+    .slim_div {
         width: 100%;
-        background-color: rgba(255, 223, 236, 0.75);
+        margin: 0;
+        padding: 0%;
+    }
+    .first_text, .advantages {
+        width: 95%;
+        margin: 0;
+        margin: auto;
     }
 }
 @media (max-width:300px){
@@ -567,5 +598,8 @@ footer img {
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         margin-top: 1px;
         margin-bottom: 1px;
+    }
+    .first_text {
+        padding: 20px 0px;
     }
 }
