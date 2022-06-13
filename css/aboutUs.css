@@ -536,6 +536,12 @@ footer img {
     .text_quality p {
         padding: 20px 30px;
     }
+    .first_text  {
+        padding: 20px 20px;
+    }
+    .advantages_part {
+        width: 90%;
+    }
 }
 @media (max-width:550px){
     footer form input[type="text"] {
@@ -565,9 +571,6 @@ footer img {
     }
     main h1 {
         font-size: 30px;
-    }
-    .first_text {
-        padding: 20px 20px;
     }
     .slim_div {
         width: 100%;
