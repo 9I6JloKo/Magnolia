@@ -375,6 +375,7 @@ footer img {
     }
     .contactsAbout {
         margin-bottom: 80px;
+        padding: 30px 30px 30px 30px;
     }
     #map {
         height: fit-content;
@@ -393,6 +394,7 @@ footer img {
 @media (max-width:650px){
     .mainFlex .contactsAbout {
         width: 100%;
+        padding: 30px 20px 30px 20px;
     }
     #map {
         width: 100%;
