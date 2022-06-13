@@ -409,24 +409,26 @@ footer img {
         width: fit-content;
     }
 }
-@media (max-width:550px){
+@media (max-width:590px){
     .logo {
         margin-left: 30%;
     }
     .header_form_mobile{
         display: none;
     }
-    footer form input[type="text"] {
-        width: 80%;
-    }
-    footer{
-        height: fit-content;
-    }
     .header_form_mobile_main{
         display: flex;
     }
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
+    }
+}
+@media (max-width:550px){
+    footer form input[type="text"] {
+        width: 80%;
+    }
+    footer{
+        height: fit-content;
     }
 }
 @media (max-width:450px){
@@ -454,10 +456,12 @@ footer img {
         margin-bottom: 3px;
     }
 }
-@media (max-width:250px){
+@media (max-width:290px){
     .logo {
         margin-left: 5%;
     }
+}
+@media (max-width:250px){
     .mainFlex .contactsAbout {
         font-size: 0.9em;
         line-height: 22px;

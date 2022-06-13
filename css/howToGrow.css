@@ -495,24 +495,29 @@ footer img {
 
     }
 }
-@media (max-width:550px){
+@media (max-width:590px){
     .logo {
         margin-left: 30%;
     }
     .header_form_mobile{
         display: none;
     }
-    footer form input[type="text"] {
-        width: 80%;
-    }
-    footer{
-        height: fit-content;
-    }
     .header_form_mobile_main{
         display: flex;
     }
     .header_form_mobile_main input[type="text"] {
         width: 65vw;
+    }
+}
+@media (max-width:550px){
+    .logo {
+        margin-left: 30%;
+    }
+    footer form input[type="text"] {
+        width: 80%;
+    }
+    footer{
+        height: fit-content;
     }
     .text_1, .text_2, .text_3 {
         font-size: 1em;
@@ -540,10 +545,12 @@ footer img {
         margin-bottom: 3px;
     }
 }
-@media (max-width:250px){
+@media (max-width:290px){
     .logo {
         margin-left: 5%;
     }
+}
+@media (max-width:250px){
     .info_header_2, .widget-title, .widget-title_2, .widget-list a {
         margin-top: 1px;
         margin-bottom: 1px;
