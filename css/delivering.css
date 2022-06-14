@@ -265,13 +265,13 @@ main .slim_div {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 45px;
     padding: 24px;
     color: #000000;
     width: 639px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 hr {
     margin-top: 10px;
@@ -284,14 +284,13 @@ hr {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 45px;
     padding: 24px;
-    padding-top: 100px;
     color: #000000;
     width: 639px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .right {
     display: flex;
