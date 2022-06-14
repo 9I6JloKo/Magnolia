@@ -266,10 +266,12 @@ main .slim_div {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 45px;
     padding: 24px;
     color: #000000;
     width: 639px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 hr {
     margin-top: 10px;
@@ -283,10 +285,13 @@ hr {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 45px;
     padding: 24px;
+    padding-top: 100px;
     color: #000000;
     width: 639px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .right {
     display: flex;
@@ -311,6 +316,7 @@ main img {
 .form_main input[type="text"]::placeholder, input[type="email"]::placeholder {
     color: grey;
     transition-duration: 0.2s;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -324,13 +330,14 @@ main img {
     border-bottom: 2px solid #f0d0c0;
 }
 .form_main input[type="text"], input[type="email"]{
-    text-decoration: none; /* Убираем подчеркивание */
     all: unset;
     width: 100%;
     margin: 25px 30px;
     border-bottom: 2px solid grey;
     transition-duration: 0.2s;
     color: rgb(97, 97, 97);
+    font-size: 20px;
+    text-align: center;
 }
 .form_main button[type="submit"] {
     cursor: pointer;
@@ -501,18 +508,31 @@ footer img {
 @media (max-width:400px){
     #left_text_up {
         font-size: 16px;
+        padding: 15px;
+        line-height: 33px;
     }
     #left_text_down {
+        font-size: 16px;
+        padding: 15px;
+        line-height: 33px;
+    }
+    .form_main input[type="text"]::placeholder, .form_main input[type="email"]::placeholder {
         font-size: 16px;
     }
     main img {
         width: 100%;
     }
+    .form_main input[type="text"], .form_main input[type="email"] {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
     .form_main button[type="submit"] {
         padding: 0;
         margin: 0;
+        margin-top: 20px;
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media (max-width:350px){
