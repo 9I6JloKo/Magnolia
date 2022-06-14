@@ -298,7 +298,7 @@ footer form {
 footer form input[type="text"] {
     width: 250px;
 }
-footer form input[type="button"] {
+footer form input[type="submit"] {
     font-family:  "Open Sans";
     height: 75%;
     width: 35%;
@@ -310,7 +310,7 @@ footer form input[type="button"] {
     cursor: pointer;
     border: 1px solid black;
 }
-footer form input[type="button"]:hover {
+footer form input[type="submit"]:hover {
     background-color: white;
     color: black;
 }

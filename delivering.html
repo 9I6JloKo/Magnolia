@@ -8,9 +8,9 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/delivering.css">
     <link rel="icon" type="image/x-icon" href="images/magnoliaIco.ico">
-      <!-- fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Cormorant:wght@700&family=Montserrat:ital,wght@0,600;1,400&family=Open+Sans:ital,wght@0,400;1,500&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
@@ -77,69 +77,38 @@
       <input type="image" src="images/free-png.ru-44.png" value="Search">
    </form>
     <main>
-        <div class="itcss">
-            <div class="itcss__wrapper">
-              <div class="itcss__items">
-                <div class="itcss__item">
-                  <div class="absolute_offer">
-                      <h2> НАСТУПИЛ СЕЗОН ПИОНОВ! </h2>
-                      <p>В эту пору пора рассмотреть наши новые предложения.</p>
-                      <p><a class = "shine-button" href="cutedFlowers.html">Ознакомиться</a></p>
-                  </div>
-                  <img id = "bad_picture" src="images/flower_1.png" alt="...">
-                </div>
-                <div class="itcss__item">
-                  <div class="itcss__item_2_img">
-                    <div class="absolute_offer_2">
-                      <h2>romantic♡season</h2>
-                      <p>Подари своей половинке немного романтики!</p>
-                      <p><a class="shine-button" href="boukets.html">Подробнее</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="itcss__item">
-                  <div class="itcss__item_3_img">
-                    <div class="absolute_offer_3">
-                      <h2>Сделай каждый день особенным</h2>
-                      <p>Удиви нашими цветами родных и близких!</p>
-                      <p><a class="shine-button" href="venki.html">Перейти</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-            <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
-            <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+      <h1>ЗАКАЗ И ДОСТАВКА</h1>
+      <div class="slim_div">
+        <div class="left">
+          <div id="left_text_up">
+            <p>Заказы принимаются до 19:30 каждого рабочего дня.</p> <hr>
+            <p>Доставка осуществляется курьером с 09:00 до 24:00.<br><br>В указанное рабочее время доставка заказа осуществляется в течении 2-3 часов с момента получения заказа.</p>
           </div>
-          <div class="infinite-line"></div>
-        <div class="cards_flex">
-            <div class="card">
-              <div class="img_card_div"><img src="images/iskrennejespasibo.jpg" alt=""></div>
-              <p class="flower_name">Искреннее спасибо</p>
-              <p class="price">35.10€<b class="salePrice">42.30€</b></p>
-              <p class="sale">15%</p>
-            </div>
-            <div class="card">
-              <div class="img_card_div"><img src="images/летнее настроение.jpg" alt=""></div>
-              <p class="flower_name">Летнее настроение</p>
-              <p class="price">33.60€<b class="salePrice">43.10€</b></p>
-              <p class="sale">22%</p>
-            </div>
-            <div class="card">
-              <div class="img_card_div"><img src="images/идиллический букет.jpg" alt=""></div>
-              <p class="flower_name">Идиллический букет</p>
-              <p class="price">29.30€<b class="salePrice">32.50€</b></p>
-              <p class="sale">10%</p>
-            </div>
-            <div class="card">
-              <div class="img_card_div"><img src="images/Букет с жёлтыми хризантемами.jpg" alt=""></div>
-              <p class="flower_name">Букет с жёлтыми хризантемами</p>
-              <p class="price">39.50€<b class="salePrice">41.60€</b></p>
-              <p class="sale">5%</p>
-           </div>
-           <p style="width:100%; text-align: center;" ><a class="button_more_flowers shine-button" href="boukets.html">Подробнее</a></p>
+          <div id="left_text_down">
+            <p>Доставка по Таллинну – 6.95 €<br>
+              9:00 – 22:00<br>
+              Доставка за Таллинном (до 25 км) – 12.50 €<br>
+              9:00 – 22:00<br>
+              Ночная доставка по Таллинну  – 12.50 €<br>
+              22:00 – 00:00<br>
+              Ночная доставка за Таллинном (до 25 км) – 17 €<br>
+              22:00 – 00:00</p>
+          </div>
         </div>
+        <div class="right">
+          <img src="images/delivery.png" alt="">
+          <form class="form_main">
+            <input placeholder="Имя" maxlength = "65" type="text">
+            <input placeholder="Фамилия" maxlength = "65" type="text">
+            <input placeholder="Телефон" maxlength = "20" type="text">
+            <input placeholder="Е-mail" maxlength = "50" type="email">
+            <input placeholder="Адрес" maxlength = "80" type="text">
+            <input placeholder="Дата" maxlength = "50" type="text">
+            <input placeholder="Время" maxlength = "30" type="text">
+            <button type="submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ<br>Узнавайте о новостях первыми!</p>
@@ -152,6 +121,6 @@
         <a href=""><img src="images/facebook.png" alt="facebook"></a>
       </div>
     </footer>
-    <script src="js/js.js"></script>
+    <script src="js/contacts.js"></script>
 </body>
 </html>
