@@ -586,7 +586,6 @@ animation-play-state: paused
     outline-color: rgb(252, 215, 241);
 }
 .img_card_div {
-    height: max-content;
     margin-bottom: 5px;
     overflow: hidden;
 }
@@ -594,7 +593,6 @@ animation-play-state: paused
     transition-duration: 0.4s;
     overflow: visible;
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 .card:hover img {
