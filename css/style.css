@@ -594,7 +594,7 @@ animation-play-state: paused
     transition-duration: 0.4s;
     overflow: visible;
     width: 100%;
-    height: max-content;
+    height: auto;
     object-fit: cover;
 }
 .card:hover img {
