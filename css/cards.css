@@ -280,12 +280,16 @@ main {
 .img_card_div {
     margin-bottom: 5px;
     overflow: hidden;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card img {
     transition-duration: 0.4s;
     overflow: visible;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .card:hover img {
     transform: scale(1.05);
@@ -534,6 +538,12 @@ footer img {
     .card img {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .img_card_div {
+        height: auto;
+    }
+    .card img {
+        object-fit: cover;
     }
 }
 @media (max-width:350px){
