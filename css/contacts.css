@@ -113,6 +113,9 @@ header div {
     background-color: #ddd;
     z-index: 1;
 }
+.dropdown button {
+    cursor: unset;
+}
 .dropdown-content a:hover {
     animation: rotating 0.25s forwards;
 }

@@ -112,6 +112,9 @@ header div {
 .dropdown-content a:hover {
     animation: rotating 0.25s forwards;
 }
+.dropdown button {
+    cursor: unset;
+}
 .nav-link:hover, .widget-title_2:hover {
     animation: rotating2 0.25s forwards;
 }

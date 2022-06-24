@@ -109,6 +109,9 @@ header div {
     display: block;
     border-bottom: 1px solid lightgrey;
 }
+.dropdown button {
+    cursor: unset;
+}
 .dropdown-content a:hover {
     background-color: #ddd;
     z-index: 1;

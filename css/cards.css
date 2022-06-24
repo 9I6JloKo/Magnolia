@@ -113,7 +113,9 @@ header div {
     background-color: #ddd;
     z-index: 1;
 }
-
+.dropdown button {
+    cursor: unset;
+}
 .dropdown:hover .dropdown-content {
     display: block;
     z-index: 1;

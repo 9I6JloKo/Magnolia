@@ -143,7 +143,9 @@ header div {
     display: block;
     z-index: 1;
 }
-
+.dropdown button {
+    cursor: unset;
+}
 .info_header {
     font-family: "Verdana";
     font-weight: 700;
